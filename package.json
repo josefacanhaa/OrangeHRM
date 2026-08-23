@@ -1,0 +1,23 @@
+{
+  "name": "orangehrm",
+  "version": "1.0.0",
+  "description": "Manual and automated testing project for the [OrangeHRM Demo](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login), covering the **Admin**, **PIM**, **Leave**, and **Time** modules. Built as a personal QA study project, combining a structured Test Plan with UI automation using **Playwright**.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josefacanhaa/OrangeHRM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/josefacanhaa/OrangeHRM/issues"
+  },
+  "homepage": "https://github.com/josefacanhaa/OrangeHRM#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0"
+  }
+}
