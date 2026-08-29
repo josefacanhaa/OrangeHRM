@@ -7,7 +7,6 @@ export class LoginPage{
   private submitButton: Locator;
 
   constructor(private page: Page) {
-    
     this.usernameInput = page.locator('input[name="username"]')
     this.passwordInput = page.locator('input[type="password"]');
     this.submitButton = page.getByRole('button', { name: 'Login' });
