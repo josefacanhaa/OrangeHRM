@@ -4,10 +4,13 @@ import { AdminPage } from '../../pages/AdminPage';
 test('TC_ADMIN_001 - Add a new system user with valid data', async ({ loggedInPage }) => {
   const admin = new AdminPage(loggedInPage);
 
+  await admin.navigateToAddAdminUserPage();
   await admin.goToAddUser();
 
-//   await admin.fillUserForm('jose.silva', 'Password@123', 'Admin');
-//   await admin.save();
+  await admin.fillAdminUserForm();
 
-//   await expect(loggedInPage.locator('.success-message')).toBeVisible();
+  await admin.navigateToAddAdminUserPage();
+
+  await loggedInPage.waitForTimeout(5000);  
+
 });
